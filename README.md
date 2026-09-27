@@ -1,280 +1,109 @@
 Automação Sofisticada (AS) na Tutoria EAD
 
-Do acompanhamento operacional à intervenção humana no momento
-certo.
+<p align="center">
 
-Este projeto apresenta uma proposta de Automação Sofisticada (AS)
-aplicada à tutoria EAD, utilizando automação e inteligência contextual
-para identificar alunos que precisam de atenção e apoiar o tutor na
-tomada de ação.
 
-A ideia central não é substituir o tutor. É fazer com que a
-infraestrutura acompanhe o cenário, interprete os sinais disponíveis e
-encaminhe ao tutor apenas os casos que realmente precisam de atenção
-humana.
 
-🎯 O problema
 
-No acompanhamento tradicional, um processo legítimo acaba se tornando
-repetitivo:
 
-O aluno não acessa uma disciplina.
 
-O sistema identifica a ausência.
+</p>
 
-O tutor precisa acompanhar o caso.
+Do acompanhamento operacional à intervenção humana no momento certo.
 
-O tutor envia uma mensagem.
+Uma abordagem de automação para identificar alunos que precisam de atenção e direcionar o tutor para os casos relevantes.
 
-O aluno recebe uma orientação.
+🔵 Como funciona hoje
 
-O tutor precisa verificar novamente se houve acesso.
+<span style="background:#5C6F82;color:white;padding:4px 10px;border-radius:12px;">PROCESSO ATUAL</span>
+<span style="background:#E8F1FB;color:#1F4E79;padding:4px 10px;border-radius:12px;">ACOMPANHAMENTO</span>
 
-Esse fluxo funciona, mas exige acompanhamento manual e repetição de
-tarefas.
+Aluno não acessa a disciplina
+        ↓
+Sistema identifica ausência
+        ↓
+Tutor acompanha
+        ↓
+Tutor envia mensagem
+        ↓
+Aluno recebe orientação
+        ↓
+Tutor verifica novamente
 
-🚀 A proposta
+🟦 Com a AS integrada
 
-Com a Automação Sofisticada (AS), a infraestrutura deixa de apenas
-registrar eventos e passa a interpretar o contexto.
+<span style="background:#0078D4;color:white;padding:4px 10px;border-radius:12px;">AUTOMAÇÃO</span>
+<span style="background:#107C10;color:white;padding:4px 10px;border-radius:12px;">CONTEXTO</span>
+<span style="background:#5C2D91;color:white;padding:4px 10px;border-radius:12px;">INTELIGÊNCIA</span>
 
-Em vez de simplesmente informar:
+Aluno não acessa
+      ↓
+AS identifica o contexto
+      ↓
+Orientação automática
+      ↓
+Aluno acessou?
+   ↙          ↘
+ SIM          NÃO
+  ↓             ↓
+Encerrar     Persistência
+acompanhamento   ↓
+             Tutor
+               ↓
+        Atenção humana
 
-"O aluno não acessou a disciplina."
+🟦 Exemplo
 
-a automação pode analisar informações como:
+<span style="background:#0078D4;color:white;padding:4px 10px;border-radius:12px;">ALUNO X</span>
+<span style="background:#5C2D91;color:white;padding:4px 10px;border-radius:12px;">DIREITO EMPRESARIAL</span>
 
-disciplina;
+Indicador
 
-último acesso;
+Situação
 
-disponibilidade do material;
+Último acesso
 
-quantidade de dias sem acesso;
+<span style="background:#FDE7E9;color:#A4262C;padding:3px 8px;border-radius:10px;">NENHUM</span>
 
-histórico do acompanhamento;
+Material
 
-resposta às orientações anteriores.
+<span style="background:#DFF6DD;color:#107C10;padding:3px 8px;border-radius:10px;">DISPONÍVEL</span>
 
-A partir desse contexto, a AS pode decidir qual ação operacional faz
-sentido.
+Dias sem acesso
 
-🧠 Exemplo de funcionamento
+<span style="background:#FFF4CE;color:#8A5A00;padding:3px 8px;border-radius:10px;">3 DIAS</span>
 
-Cenário
+<span style="background:#172033;color:white;padding:5px 12px;border-radius:12px;">AS · INTERPRETA O CONTEXTO</span>
 
-Aluno X • Direito Empresarial
+Orientação automática: “O material já está disponível.”
 
-Último acesso: nenhum
+<span style="background:#DFF6DD;color:#107C10;padding:4px 10px;border-radius:12px;">ALUNO ACESSOU → ACOMPANHAMENTO ENCERRADO</span>
 
-Material: disponível
+<span style="background:#FFF4CE;color:#8A5A00;padding:4px 10px;border-radius:12px;">CONTINUA SEM ACESSO → PERSISTÊNCIA IDENTIFICADA</span>
 
-Dias sem acesso: 3
+<span style="background:#FDE7E9;color:#A4262C;padding:4px 10px;border-radius:12px;">TUTOR → ATENÇÃO HUMANA</span>
 
-A AS interpreta o contexto e gera uma orientação automática:
-
-"O material já está disponível."
-
-O objetivo é iniciar o acompanhamento sem exigir que o tutor faça
-manualmente toda a análise inicial.
-
-🔄 Acompanhamento contínuo
-
-O processo não termina necessariamente com a primeira orientação.
-
-Se o aluno acessar
-
-Acompanhamento encerrado.
-
-Se continuar sem acesso
-
-A AS identifica a persistência da ausência e mantém o caso no fluxo
-de acompanhamento.
-
-Nesse momento, o tutor recebe apenas o caso que necessita de:
-
-atenção humana.
-
-👨‍🏫 O papel do tutor
-
-A automação não elimina a participação do tutor.
-
-Ela muda onde o tempo do tutor é utilizado.
-
-Antes
-
-O tutor precisa:
-
-identificar os alunos;
-
-consultar informações;
-
-interpretar o contexto;
-
-enviar orientações;
-
-verificar novamente;
-
-repetir o processo.
-
-Com a AS
-
-A infraestrutura pode:
-
-identificar situações relevantes;
-
-reunir o contexto;
-
-realizar orientações operacionais;
-
-acompanhar a persistência;
-
-sinalizar exceções;
-
-encaminhar ao tutor os casos que precisam de intervenção humana.
-
-Assim, o tutor pode concentrar seu trabalho em situações que exigem
-análise, relacionamento e decisão humana.
-
-🏗️ Arquitetura conceitual
-
-┌──────────────────────┐
-│ Ambiente EAD / LMS   │
-│                      │
-│ Acessos              │
-│ Disciplinas          │
-│ Materiais            │
-│ Atividades           │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Monitoramento        │
-│ e coleta de eventos  │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Automação Sofisticada│
-│        (AS)          │
-│                      │
-│ Contexto             │
-│ Regras               │
-│ Histórico            │
-│ Persistência         │
-└──────────┬───────────┘
-           │
-      ┌────┴─────┐
-      ▼          ▼
-┌───────────┐ ┌────────────────┐
-│ Orientação│ │ Caso necessita │
-│ automática│ │ atenção humana │
-└───────────┘ └───────┬────────┘
-                       │
-                       ▼
-                 ┌──────────┐
-                 │  Tutor   │
-                 └──────────┘
-
-💡 Princípio do projeto
-
-A proposta pode ser resumida em uma ideia:
+🟩 Conceito
 
 A própria infraestrutura encontra quem precisa de atenção humana.
 
-Isso transforma o acompanhamento de uma atividade predominantemente
-reativa em um processo orientado por sinais, contexto e
-continuidade.
+A AS não substitui o tutor. Ela reduz o acompanhamento operacional e ajuda a concentrar a atuação humana nos casos que exigem intervenção.
 
-📌 Exemplo de fluxo
+🔷 Fluxo
 
-Aluno não acessa a disciplina
-            ↓
-Sistema identifica ausência
-            ↓
-AS interpreta o contexto
-            ↓
-Orientação automática
-            ↓
-Aluno acessa?
-     ┌──────┴──────┐
-    SIM            NÃO
-     ↓              ↓
-Encerrar       Persistência
-acompanhamento     ↓
-              Encaminhar
-                ao tutor
-                    ↓
-             Atenção humana
+<span style="background:#0078D4;color:white;padding:4px 10px;border-radius:12px;">MONITORAR</span>
+→
+<span style="background:#5C2D91;color:white;padding:4px 10px;border-radius:12px;">INTERPRETAR</span>
+→
+<span style="background:#107C10;color:white;padding:4px 10px;border-radius:12px;">ORIENTAR</span>
+→
+<span style="background:#00A4EF;color:white;padding:4px 10px;border-radius:12px;">ACOMPANHAR</span>
+→
+<span style="background:#D83B01;color:white;padding:4px 10px;border-radius:12px;">ESCALAR</span>
 
-🎯 Objetivos
+<p align="center">
 
-Reduzir tarefas repetitivas da tutoria.
+AUTOMAÇÃO SOFISTICADA (AS)
+Tutoria EAD orientada por contexto.
 
-Aumentar a capacidade de acompanhamento.
-
-Identificar situações que exigem intervenção.
-
-Dar contexto para cada ocorrência.
-
-Evitar que o tutor precise procurar manualmente todos os casos.
-
-Direcionar o trabalho humano para situações que realmente exigem
-atenção.
-
-Criar uma experiência de acompanhamento mais contínua para o aluno.
-
-🔭 Possíveis evoluções
-
-A arquitetura pode evoluir para incorporar novos sinais e decisões, por
-exemplo:
-
-ausência de acesso;
-
-baixa participação;
-
-atividades não iniciadas;
-
-atividades próximas do prazo;
-
-repetição de dificuldades;
-
-histórico de orientações;
-
-mudança de comportamento;
-
-priorização de casos;
-
-geração de mensagens contextualizadas;
-
-dashboards para tutores e coordenação;
-
-integração com assistentes virtuais;
-
-análise inteligente de ocorrências.
-
-🧪 Projeto experimental
-
-Este repositório pode ser utilizado como laboratório para desenvolver e
-validar conceitos de automação aplicada à tutoria EAD, permitindo
-evoluir gradualmente de regras simples para fluxos mais sofisticados de
-análise e intervenção.
-
-A proposta é começar com sinais objetivos e ampliar a inteligência do
-sistema conforme novos dados, integrações e casos de uso sejam
-incorporados.
-
-📄 Licença
-
-A licença do projeto conforme a estratégia de distribuição
-
-🤝 Contribuições
-
-Sugestões, ideias e melhorias são bem-vindas.
-
-O foco é explorar como automação, contexto e intervenção humana
-podem trabalhar juntos para melhorar o acompanhamento educacional.
-
-Automação Sofisticada (AS)
-
-Do acompanhamento operacional à intervenção humana no momento certo.
+</p>
