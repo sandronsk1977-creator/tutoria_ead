@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🤖 AS — Acompanhamento Inteligente EaD
+# 🤖 AS Acompanhamento Inteligente EaD
 
 ### Automação Sofisticada (AS) na Tutoria EAD
 
