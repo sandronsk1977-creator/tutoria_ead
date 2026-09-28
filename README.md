@@ -17,15 +17,15 @@
 
 ## 🖼️ Preview
 
-![AS — Acompanhamento Inteligente EaD](./automacao_sofisticada_tutoria_ead.png)
+![AS Acompanhamento Inteligente EaD](./automacao_sofisticada_tutoria_ead.png)
 
 ---
 
 ## 📌 O que é
 
-Um **painel operacional de tutoria EaD** inspirado no ecossistema **Microsoft Azure / Entra ID**, onde a automação não substitui o tutor — ela **descobre quem precisa de atenção humana**.
+Um **painel operacional de tutoria EaD** inspirado no ecossistema **Microsoft Azure / Entra ID**, onde a automação não substitui o tutor: ela **descobre quem precisa de atenção humana**.
 
-A **AS (Automação Sofisticada)** observa a infraestrutura de aprendizagem, interpreta o contexto de cada aluno e executa a primeira intervenção sozinha. Se o aluno reage, o acompanhamento é encerrado. Se a inatividade persiste, a AS **escala o caso para o tutor** — com todo o histórico já organizado.
+A **AS (Automação Sofisticada)** observa a infraestrutura de aprendizagem, interpreta o contexto de cada aluno e executa a primeira intervenção sozinha. Se o aluno reage, o acompanhamento é encerrado. Se a inatividade persiste, a AS **escala o caso para o tutor**, com todo o histórico já organizado.
 
 > **Ideia principal:** a própria infraestrutura encontra quem precisa de atenção humana.
 
@@ -75,7 +75,7 @@ flowchart TD
     D -->|Não ❌| F["🔁 AS identifica persistência<br/>e reavalia o caso"]
     F --> G{"Ainda automatizável?"}
     G -->|Sim| C
-    G -->|Não| H["👨‍🏫 TUTOR — somente os casos<br/>que exigem intervenção humana"]
+    G -->|Não| H["👨‍🏫 TUTOR: somente os casos<br/>que exigem intervenção humana"]
 
     style C fill:#0F6CBD,stroke:#ffffff,color:#ffffff
     style E fill:#107C10,stroke:#ffffff,color:#ffffff
@@ -131,10 +131,10 @@ Interface desenhada sobre a linguagem visual de consoles de nuvem: **densidade i
 - **🧭 Navegação lateral** por disciplina, turma e faixa de risco
 - **🔴🟡🟢 Semáforo de status** com severidade consistente em toda a tela
 - **🪟 Painel lateral de detalhe** (`drawer`) com timeline completa do aluno
-- **📊 Gráficos de acompanhamento** — Engajamento, Retenção e Tempo de resposta
+- **📊 Gráficos de acompanhamento**: Engajamento, Retenção e Tempo de resposta
 - **🔎 Filtros e busca** por aluno, disciplina, situação e data
-- **🏷️ Badges de contexto** — "3º contato", "sem resposta", "prazo próximo"
-- **⚡ Ações em lote** — atendimento individual ou agrupado por padrão de caso
+- **🏷️ Badges de contexto**: "3º contato", "sem resposta", "prazo próximo"
+- **⚡ Ações em lote**: atendimento individual ou agrupado por padrão de caso
 - **🌙 Tema claro/escuro** e layout responsivo
 
 ---
@@ -155,7 +155,7 @@ Cada evento alimenta uma **fila de priorização**. A AS só escala quando enten
 
 | Nível | Critério | Quem age |
 |:---:|:---|:---|
-| 🟢 **OK** | Acesso dentro do esperado | — |
+| 🟢 **OK** | Acesso dentro do esperado | Nenhuma |
 | 🟡 **Observar** | 1 dia sem acesso | Automação |
 | 🟠 **Atenção** | 2 dias ou prazo próximo | Automação + tutor |
 | 🔴 **Crítico** | 3+ dias, prazo vencido ou risco de evasão | **Tutor** |
@@ -164,15 +164,15 @@ Cada evento alimenta uma **fila de priorização**. A AS só escala quando enten
 
 ## ✨ Funcionalidades
 
-- 📡 **Ingestão de eventos** — acesso, download de material, entrega de tarefa, interação em fóruns
-- 🧠 **Motor de contexto** — cruza sinais para montar o retrato completo do aluno
-- 💬 **Orientação automática** — mensagens claras, empaticas e contextualizadas
-- 🔁 **Detecção de persistência** — distingue “não viu” de “viu e não engiu”
-- 👨‍🏫 **Fila do tutor** — priorizada por risco, sem ruído
-- 🕘 **Timeline do caso** — cada ação da AS e do tutor registrada e auditável
-- 📈 **Painel analítico** — engajamento por disciplina, período e cohort
-- 🔌 **Integrações** — LMS, repositório institucional e mensageria
-- 🛡️ **Privacidade by design** — minimização de dados e LGPD desde a coleta
+- 📡 **Ingestão de eventos**: acesso, download de material, entrega de tarefa, interação em fóruns
+- 🧠 **Motor de contexto**: cruza sinais para montar o retrato completo do aluno
+- 💬 **Orientação automática**: mensagens claras, empaticas e contextualizadas
+- 🔁 **Detecção de persistência**: distingue “não viu” de “viu e não engiu”
+- 👨‍🏫 **Fila do tutor**: priorizada por risco, sem ruído
+- 🕘 **Timeline do caso**: cada ação da AS e do tutor registrada e auditável
+- 📈 **Painel analítico**: engajamento por disciplina, período e cohort
+- 🔌 **Integrações**: LMS, repositório institucional e mensageria
+- 🛡️ **Privacidade by design**: minimização de dados e LGPD desde a coleta
 
 ---
 
@@ -230,13 +230,13 @@ Cada evento alimenta uma **fila de priorização**. A AS só escala quando enten
 
 ## 📜 Licença
 
-Uso **educacional** — sinta-se livre para usar e modificar para fins de ensino e pesquisa. 🎓
+Uso **educacional**: sinta-se livre para usar e modificar para fins de ensino e pesquisa. 🎓
 
 ---
 
 ## 👨‍💻 Autor
 
-**Sandro Ferreira** — Analista de TI • ITSM • Infraestrutura • Automação
+**Sandro Ferreira**: Analista de TI • ITSM • Infraestrutura • Automação
 
 [![GitHub](https://img.shields.io/badge/GitHub-sandronsk1977--creator-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sandronsk1977-creator)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Sandro%20Ferreira-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sandro-ferreira-5816b4284/)
