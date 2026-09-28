@@ -113,23 +113,22 @@ flowchart TD
 
 Interface desenhada sobre a linguagem visual de consoles de nuvem: **densidade informacional, foco no que é acionável e leitura rápida**.
 
-```text
-┌──────────────────────────────────────────────────────────────────────┐
-│  AS · Tutoria EaD          [ Disciplina ▾ ] [ Período ▾ ] [ 🔍 ]   │
-├──────────────────────────────────────────────────────────────────────┤
-│  ┌───────────┐  ┌───────────┐  ┌───────────┐  ┌───────────┐        │
-│  │ Monitorados│ │ Em risco  │ │  Escalados │ │  Resolvidos│        │
-│  │    248     │ │    17     │ │     5      │ │    231     │        │
-│  └───────────┘  └───────────┘  └───────────┘  └───────────┘        │
-├──────────────────────────────────────────────────────────────────────┤
-│  Aluno            Disciplina            Dias   Status      Ação     │
-│  ──────────────────────────────────────────────────────────────────  │
-│  Aluno X          Direito Empresarial        3   ● Crítico  [Atender] │
-│  Aluna Y          Contabilidade Básico       2   ● Atenção [Atender]  │
-│  Aluno Z          Gestão de Projetos        1   ● Observ. [Revisar]  │
-│  Aluno W          Direito Empresarial        0   ● OK       [Ver]     │
-└──────────────────────────────────────────────────────────────────────┘
-```
+<div align="center">
+
+**AS · Tutoria EaD** &nbsp; <kbd>Disciplina ▾</kbd> &nbsp; <kbd>Período ▾</kbd> &nbsp; <kbd>🔍</kbd>
+
+</div>
+
+| Monitorados | Em risco | Escalados | Resolvidos |
+|:---:|:---:|:---:|:---:|
+| **248** | **17** | **5** | **231** |
+
+| Aluno | Disciplina | Dias | Status | Ação |
+|:---|:---|:---:|:---:|:---|
+| Aluno X | Direito Empresarial | 3 | ![Crítico](https://img.shields.io/badge/Cr%C3%ADtico-D83B01?style=flat-square) | <kbd>[Atender]</kbd> |
+| Aluna Y | Contabilidade Básico | 2 | ![Atenção](https://img.shields.io/badge/Aten%C3%A7%C3%A3o-FFB900?style=flat-square) | <kbd>[Atender]</kbd> |
+| Aluno Z | Gestão de Projetos | 1 | ![Observ.](https://img.shields.io/badge/Observ.-6C63FF?style=flat-square) | <kbd>[Revisar]</kbd> |
+| Aluno W | Direito Empresarial | 0 | ![OK](https://img.shields.io/badge/OK-107C10?style=flat-square) | <kbd>[Ver]</kbd> |
 
 ### 🎨 Recursos de interface
 
