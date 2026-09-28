@@ -1,6 +1,11 @@
 <div align="center">
 
-# 🤖 AS Acompanhamento Inteligente EaD
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0B3C5D&fontSize=44&text=AS%20Acompanhamento%20Inteligente%20EaD&theme=merko">
+  <img alt="AS Acompanhamento Inteligente EaD" src="https://capsule-render.vercel.app/api?type=waving&color=0F6CBD&fontSize=44&text=AS%20Acompanhamento%20Inteligente%20EaD&theme=default">
+</picture>
+
+<br>
 
 ### Automação Sofisticada (AS) na Tutoria EAD
 
